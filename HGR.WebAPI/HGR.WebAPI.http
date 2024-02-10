@@ -1,0 +1,6 @@
+@HGR.WebAPI_HostAddress = http://localhost:5050
+
+GET {{HGR.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
