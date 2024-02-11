@@ -14,8 +14,6 @@ namespace HGR.WebAPI
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
             services.AddApplicationLayerDependencies();
-            services.AddScoped<IDummyRepository, DummyRepository>();
-
             return services;
         }
     }
