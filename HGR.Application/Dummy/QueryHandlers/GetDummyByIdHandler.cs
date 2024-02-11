@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace HGR.Application.Dummy.QueryHandlers
 {
+
     public class GetDummyByIdHandler(IDummyRepository dummyRepository) : IRequestHandler<GetDummyById, Dummyentitiy>
     {
         public async Task<Dummyentitiy> Handle(GetDummyById request, CancellationToken cancellationToken)

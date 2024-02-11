@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace HGR.Application.Dummy.CommandHandlers
 {
-    public class CreateDummyHandler(IDummyRepository dummyRepository) : IRequestHandler<CreateDummy, Dummyentitiy>
+    public class CreateDummyHandler(IDummyRepository dummyRepository) : IRequestHandler<CreateDummyCommand, Dummyentitiy>
     {
-        public async Task<Dummyentitiy> Handle(CreateDummy request, CancellationToken cancellationToken)
+        public async Task<Dummyentitiy> Handle(CreateDummyCommand request, CancellationToken cancellationToken)
         {
             var dummy = new Dummyentitiy()
             {

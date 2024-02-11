@@ -27,7 +27,7 @@ namespace HGR.Infrastructure.Repositories
             await context.SaveChangesAsync();
         }
 
-        public async Task<ICollection<Dummyentitiy>> GetAll()
+        public async Task<List<Dummyentitiy>> GetAll()
         {
             return await context.Dummy.ToListAsync();
         }

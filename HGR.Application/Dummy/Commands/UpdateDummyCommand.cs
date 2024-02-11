@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HGR.Application.Dummy.Queries
+namespace HGR.Application.Dummy.Commands
 {
-    public record GetDummyById(int Id) : IRequest<Dummyentitiy>;
+    public record UpdateDummyCommand(int ID, string Name, string Email) : IRequest<Dummyentitiy>;
 }

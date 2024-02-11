@@ -8,9 +8,6 @@ using System.Threading.Tasks;
 
 namespace HGR.Application.Dummy.Commands
 {
-    public class CreateDummy : IRequest<Dummyentitiy>
-    {
-        public string? Name { get; set; }
-        public string? Email { get; set; }
-    }
+    public record CreateDummyCommand(string Name, string Email) : IRequest<Dummyentitiy>;
+
 }

@@ -9,7 +9,7 @@ namespace HGR.Application.Abstractions
 {
     public interface IDummyRepository
     {
-        Task<ICollection<Dummyentitiy>> GetAll();
+        Task<List<Dummyentitiy>> GetAll();
 
         Task<Dummyentitiy> GetDummyById(int dummyId);
 
